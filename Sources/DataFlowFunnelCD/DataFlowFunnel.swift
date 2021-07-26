@@ -46,7 +46,7 @@ public class DataFlowFunnel: OperationQueue {
             /// Core Data model name
         self.setModelName(to: modelName)
             /// Framework bundle ID target
-        self.targetBundleIdentifier = bundleId
+        self.setTargetBundleIdentifier(bundleId: bundleId)
     }
     
     
