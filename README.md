@@ -19,16 +19,21 @@ Installation Instructions:
     @main
     class AppDelegate: UIResponder, UIApplicationDelegate 
     {
+      
       // 1
       var refDataFlowFunnel:DataFlowFunnel = DataFlowFunnel.shared
     
+      
       func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      
           // 2
           // name your Core Data momd 
           self.refDataFlowFunnel.setModelName(to: "CoreDataFunnelModel" )
+          
           // 3
           // id the bundle of the app sharing all the packages
           self.refDataFlowFunnel.setTargetBundleIdentifier(bundleId: "com.matthewferguson.PondFishing")
+          
           // 4
           // use your custom CRUD operations. For example I use a debug Swift Operation to print the entire relational database. 
           DataFlowFunnel.shared.addOperation(FetchAndDescribeDataOperation())
