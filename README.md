@@ -1,6 +1,7 @@
 # DataFlowFunnelCD
 
-Required : Xcode 12.x and newer, Swift 5.x and newer, iOS 13.X, 14.X SDK and newer. Testing for iOS 12 and 11 has not occurred, but might be added in the future.  
+Built For : Xcode 12.x and newer, Swift 5.x and newer, iOS 13.X SDK, 14.X SDK, M1 (Apple Silicon) macOS 11 and greater ( target 'x86_64-apple-ios-macabi') . Testing for iOS 12 and 11 has not occurred, but might be added in the future. Testing for macOS 10 and Intel based devices has not occurred, but might be added in the future.  
+
 
 DataFlowFunnelCD is a Swift Package used for two main Architecture purposes.  1) Manage Core Data contention (multi-threaded) issues when saving two separate NSManagedObjects ( CRUD operations). 2) Solves the problem of referencing the NSPersistentContainer from anywhere in the bundle. Anywhere includes frameworks, other swift packages, and traditional bundle access. 
 
